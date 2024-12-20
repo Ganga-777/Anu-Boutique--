@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+}
+body{
+    font-family: var(--sm-font);
+}
+
+/* button */
+.bg-primary{
+    background-color: var(--pink)!important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+/* text color */
+.text-primary{
+    color: var(--pink)!important;
+}
+
+/* navbar */
+.navbar{
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img{
+    width: 30px;
+}
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+.nav-link:hover{
+    color: var(--pink)!important;
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+/* header */
+#header{
+    background: url(../images/banner-img-1.jpg) center/cover no-repeat;
+    height: 600px !important;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.carousel-inner {
+    height: 100%;
+}
+.carousel-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-item .text-center {
+    width: 100%;
+    padding: 0 20px;
+}
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.carousel-item .btn{
+    border-color: #fff!important;
+}
+.carousel-item .btn:hover{
+    border-color: var(--pink)!important;
+}
+
+/* title */
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+/* collection */
+.active-filter-btn{
+    background-color: var(--pink)!important;
+    color: #fff!important;
+    border-color: var(--pink)!important;
+}
+.filter-button-group .btn:hover{
+    color: #fff!important;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+/* special */
+.special-img span{
+    top: 20px;
+    right: 20px;
+}
+.special-list .btn{
+    padding: 8px 20px!important;
+}
+.special-img img{
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.special-img:hover img{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+/* offers */
+#offers {
+    background: none;
+    padding: 0 !important;
+}
+
+.offers-banner {
+    position: relative;
+    max-width: 1050px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.offers-banner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.offers-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.offers-content span {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.offers-content h2 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+    margin-bottom: 20px;
+}
+
+.offers-content .btn {
+    border-color: #fff !important;
+    color: #fff;
+}
+
+.offers-content .btn:hover {
+    background-color: var(--pink);
+    border-color: var(--pink) !important;
+}
+
+/* Make offers section responsive */
+@media (max-width: 1050px) {
+    .offers-banner {
+        width: 100%;
+    }
+    
+    .offers-content {
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
+    
+    .offers-content h2 {
+        font-size: 40px;
+    }
+}
+
+/* about */
+#about{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+/* newsletter */
+#newsletter{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+#newsletter p{
+    max-width: 600px;
+}
+#newsletter .input-group{
+    max-width: 500px;
+}
+#newsletter .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#newsletter .btn{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+#newsletter .btn:hover{
+    background-color: #000;
+    border-color: #000;
+}
+
+/* footer */
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+footer a{
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+footer a:hover{
+    color: var(--pink)!important;
+}
+
+/* media queries */
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
+
+/* Add these styles for collection images */
+.collection-img {
+    position: relative;
+    overflow: hidden;
+    height: 400px; /* Fixed height for all collection images */
+}
+
+.collection-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will maintain aspect ratio while covering the container */
+    transition: transform 0.3s ease;
+}
+
+.collection-img:hover img {
+    transform: scale(1.1);
+}
+
+/* Make header responsive */
+@media (max-width: 1050px) {
+    #header {
+        width: 100%;
+    }
+}
+
+/* WhatsApp floating button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    animation: whatsapp-animation 2s ease-in-out infinite;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    color: #FFF;
+}
+
+/* Animation for WhatsApp button */
+@keyframes whatsapp-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Make WhatsApp button responsive */
+@media screen and (max-width: 767px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 25px;
+    }
+}
+
+/* Blog section styles */
+.card img {
+    width: 100%;
+    height: 300px; /* Fixed height for all blog images */
+    object-fit: cover; /* This maintains aspect ratio while covering the container */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    transition: transform 0.3s ease; /* Optional: smooth hover effect */
+}
+
+.card:hover img {
+    transform: scale(1.02); /* Optional: slight zoom on hover */
+}
+
+/* Make blog images responsive */
+@media (max-width: 768px) {
+    .card img {
+        height: 250px; /* Slightly smaller height for mobile devices */
+    }
+}
+
+/* Contact section styles */
+#contact .contact-info i {
+    color: var(--pink);
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+#contact .contact-info p {
+    color: #666;
+}
+
+#contact .contact-form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 12px 20px;
+}
+
+#contact .contact-form .form-control:focus {
+    border-color: var(--pink);
+    box-shadow: none;
+}
+
+#contact .contact-form textarea.form-control {
+    min-height: 120px;
+}
+
+#contact .contact-form .btn {
+    background-color: var(--pink);
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+}
+
+#contact .contact-form .btn:hover {
+    background-color: #d42d4f;
+}
+
+/* Video showcase section */
+#video-showcase {
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+.video-container {
+    max-width: 1050px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Ensure video container maintains aspect ratio */
+.video-container > div {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Make video responsive */
+@media (max-width: 768px) {
+    .video-container {
+        margin: 0 15px;
+    }
+}
+
+/* GSM Tech Solutions link style */
+.gsm-link {
+    color: var(--pink) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.gsm-link:hover {
+    color: #fff !important;
+    text-decoration: underline !important;
+}
